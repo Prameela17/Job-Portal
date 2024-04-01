@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="edit profile.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1 class="logo">Robto</h1>
+        <div class="search">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </button>
+            <input class="input" type="search" placeholder="Search Doctor">
+        </div>
+
+        <div class="nav-items1">
+            <div id="items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Job</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                        </svg></a>
+                    </li>
+                    <li><a href="#"><img src="assets/Profile Icon.png" alt="Profile" width="30px"></a></li>
+                </ul>
+            </div>
+            <button class="btn"><a href="login.html">Post Job</a></button>
+        </div>
+    </div>
+ 
+
+    <!-- Form Section -->
+    <div class="edit-profile">
+        <a href="profile.html"><img src="assets/ion_arrow-back.png" alt="" class="back-arrow"></a>
+        <p class="edit-profile-head">Contact Information</p>
+        <form action="#" class="edit-profile-form">
+            <div class="form-details">
+                <label for="fname" id="required" class="title1">First Name</label><br>
+                <input type="text" name="fname" id="fname" placeholder="Enter Your First Name">
+            </div>
+            <div class="form-details">
+                <label for="lname" id="required" class="title1">Last Name</label><br>
+                <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name">
+            </div>
+            <div class="form-details">
+                <label for="phone" id="required" class="title1">Phone</label><br>
+                <div class="phone-input">
+                    <div class="phone-input-img">
+                        <img src="assets/twemoji_flag-india.png" alt="">
+                        <p>+91</p>
+                        <img src="assets/Vector 26.png" alt="" id="img-line">
+                    </div>
+                    <input type="tel" id="phone" placeholder="1297498349">
+                </div>
+            </div>
+            <div class="form-details1">
+                <div>
+                    <label for="email" class="title1">Email</label><br>
+                    <p>zeenajalil@gmail.com</p><br>
+                </div>
+                <img src="assets/Frame 63.png" alt="">
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+            
+            <div class="form-details">
+                <label for="location" class="title1">Location</label><br>
+                <p>This helps match you with nearby job.</p>
+            </div>
+            <div class="form-details">
+                <label for="country" id="required" class="title1">Country</label><br>
+                <select name="country" id="country">
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="japan">Japan</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+            <div class="form-details">
+                <label for="streetaddress" class="title1">Street Address</label><br>
+                <p>Visible only to you</p>
+                <input type="text">
+            </div>
+            <div class="form-details">
+                <label for="city,state" id="required" class="title1">City, State</label><br>
+                <input type="text">
+            </div>
+            <div class="form-details">
+                <label for="pincode" id="required" class="title1">Pin Code</label><br>
+                <input type="text" name="pincode" inputmode="numeric" maxlength="6">
+            </div>
+            <div class="buttons">
+                <button id="save-button"><a href="#">SAVE</a></button>
+                <button id="cancel-button"><a href="#">Cancel</a></button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

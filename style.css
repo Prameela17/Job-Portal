@@ -1,0 +1,856 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Navbar Section */
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 65px;
+    background-color: #666666;
+    background-image: linear-gradient(to right, #3D3B40 10%, #666666 30%, #666666 50%);
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 34px;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1;
+}
+.search{
+    width: 230px;
+    height: 27px;
+    display: flex;
+    position: relative;
+    left: -10px;
+}
+.input{
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    padding-left: 34px;
+    border-radius: 5px;
+}
+.search-btn{
+    z-index: 2;
+    position: absolute;
+    color: rgb(141, 139, 139);
+    background-color: white;
+    border: none;
+    top: 6px;
+    left: 10px;
+}
+.nav-items {
+    z-index: 2;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;  
+    margin-left: 490px;
+}
+.nav-items1 {
+    z-index: 2;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;  
+    margin-left: 420px;
+}
+#items ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    color: white;
+}
+#items ul li{
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 16px;
+}
+#items ul li a{
+    text-decoration: none;
+    color: white;
+}
+#items ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+#items ul li:hover::after{
+    width: 100%;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: #525CEB;
+    border: 1px solid #525CEB;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Navbar Container */
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+.left-img{
+    width: 700px;
+    position: relative;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.left-content{
+    position: absolute;
+    top: 380px;
+    left: 100px;
+    color: white;
+}
+.color{
+    width: 113%;
+    position: absolute;
+    object-fit: cover;
+    top: -428px;
+    left: -178px;
+    z-index: 0;
+}
+.right-img{
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    right: 38px;
+}
+#head{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+}
+#info{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.box{
+    margin-top: 30px;
+    width: 155px;
+}
+#circle{
+    width: 34px;
+    height: 28px;
+    padding-top: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 3px 20px black;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 18px;
+    margin-left: 70px;
+}
+#box1{
+    width: 320px;
+    height: 40px;
+    padding-top: 8px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0 5px 5px rgb(180, 180, 180);
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 28px;
+    margin-top: 24px;
+}
+
+/* Search Box */
+.job-search{
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+}
+.search-field{
+    width: 900px;
+    border-bottom: 3px solid #525CEB;
+    margin-left: 40px;
+    padding: 3px 50px;
+    text-align: center;
+}
+.location{
+    position: relative;
+}
+.input-box{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #BFC3FF;
+    background-color: #F8EDFF;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 26px;
+}
+.search-field input::placeholder{
+    color: #444444;
+}
+#location-icon{
+    position: absolute;
+    top: 35px;
+    left: 550px;
+}
+.category{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.category .input-box{
+    color: #444444;
+}
+.search-box{
+    margin-top: -5px;
+}
+
+/* Recent Jobs Section */
+.recent-jobs{
+    margin: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 15px;
+}
+.tab{
+    width: 400px;
+    display: flex;
+    border-radius: 10px;
+    color: white;
+}
+.tab button{
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #878787;
+}
+.tab button a{
+    text-decoration: none;
+    color: black;
+}
+#tab1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#tab4{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.selected{
+    background-color: #2E216B;
+    color: white;
+}
+.component{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    gap: 20px;
+    width: 1230px;
+}
+.component-box{
+    width: 560px;
+    margin: 20px 0;
+    border: 1px solid #b6b6b6;
+    background-color: #FFFFFF;
+}
+.component-divisions{
+    margin: 12px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-job{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+}
+#job-head{
+    font-size: 16px;
+    color: #414141;
+    margin-left: 3px;
+}
+#company{
+    color: #525CEB;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+#rupee{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+}
+#job-location{
+    margin-top: 8px;
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    color: #717171;
+    font-size: 14px;
+}
+#posted{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+#job-buttons{
+    margin-left: 10px;
+}
+#freelance-button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#freelance-button button{
+    width: 100px;
+    height: 28px;
+    border: 1px solid #25C5D2;
+    background-color: #25C5D2;
+    border-radius: 8px;
+}
+#job-buttons button a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+#job-buttons #apply{
+    width: 100px;
+    height: 28px;
+    border: 1px solid #2E216B;
+    background-color: #2E216B;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-left: 38px;
+}
+.division-footer{
+    padding-left: 40px;
+    height: 40px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background-color: #BFCFE7;
+}
+#tag{
+    font-size: 16px;
+    font-weight: bold;
+    color: #414141;
+}
+#tagged{
+    font-size: 16px;
+    color: #686868;
+}
+
+/* Offering Deals Section */
+.offering-deals-section{
+    width: 100%;
+    height: 70vh;
+    margin-top: 150px;
+    background-image: url(assets/Group\ 4.png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.offering-deals{
+    font-family: 'Sofia Sans', sans-serif;
+    padding: 80px 70px;
+    color: white;
+}
+.offering-deals .head{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+#deals-boxes{
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+#deals-box{
+    width: 240px;
+    height: 120px;
+    background: transparent;
+    border: 1px solid #999999;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 3px 10px #686868;
+}
+#deals-head{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#deals-head{
+    font-size: 24px;
+    font-weight: bold;
+}
+#deals-head-info{
+    margin: 20px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Top Hiring Section */
+.top-hiring-companies{
+    margin: 100px 100px;
+}
+.top-hire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 10px;
+    gap: 10px;
+    width: 1100px;
+}
+.company-openings{
+    width: 470px;
+    height: 240px;
+    margin: 40px 0;
+    border: 1px solid #b6b6b6;
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+}
+.nameOfCompany{
+    display: flex;
+    justify-content: space-between;
+}
+#openings1{
+    background-color: #A5ABFF;
+}
+#openings2{
+    background-color: #D2A5FF;
+}
+#openings3{
+    background-color: #FFA5F1;
+}
+#openings4{
+    background-color: #FFA5C0;
+}
+.company-name #name{
+    font-family: 'Spartan', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+.company-name #place{
+    font-size: 22px;
+    margin-top: 15px;
+    color: white;
+}
+.company-openings button{
+    width: 200px;
+    height: 25px;
+    border: 1px solid #0F0A52;
+    background-color: #0F0A52;
+    margin-top: 50px;
+    margin-left: 130px;
+    border-radius: 6px;
+}
+.company-openings button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
+
+/* Jobs Available Section */
+.jobs-available{
+    width: 100%;
+    height: 45vh;
+    margin-top: 150px;
+    background-image: linear-gradient(rgba(43, 41, 41, 0.75),rgba(96, 95, 99, 0.75)), url(assets/group-friends-eating-restaurant\ 1.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.total-jobs-vailable{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+}
+.total-jobs #persons{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.total-jobs #job1{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Popular Categories */
+.popular-categories{
+    margin: 100px 90px;
+}
+.categories{
+    text-align: center;
+    line-height: 20px;
+}
+.categories p{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+.all-categories{
+    margin-top: 40px;
+    width: 1150px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.category1{
+    width: 260px;
+    height: 160px;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-family: 'Spartan', sans-serif;
+    border: 1px solid #DCDCDC;
+    text-align: center;
+}
+#category-img{
+    margin-top: 20px;
+}
+#category-name{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#number-of-jobs{
+    font-size: 11px;
+    margin-top: 10px;
+}
+#border-bottom{
+    margin-left: 10px;
+    border-bottom: 3px solid #2a2f85;
+}
+
+/* Testimonal Section */
+.testimonal{
+    margin-top: 150px;
+    display: flex;
+}
+/* Candidate Review */
+.candidate-review{
+    width: 50%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(43, 41, 41, 0.75),rgba(96, 95, 99, 0.75)), url(assets/elegant-woman-with-smiling-face-typing-her-laptop\ 2-1.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.candidate-review-head{
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+}
+.slideshow-container{
+    width: 400px;
+    position: relative;
+    padding-top: 100px;
+    padding-left: 150px;
+}   
+.mySlides{
+    display: none;
+    width: 360px;
+    height: 150px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Spartan', sans-serif;
+    position: relative;
+}
+#personName{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #000000;
+}
+#personRole{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 6px;
+    color: #0575DD;
+}
+#personReview{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 25px;
+    padding: 0 32px;
+    color: #000000;
+}
+#personProfile{
+    position: absolute;
+    top: -65px;
+    left: 10px;
+}
+.stars{
+    text-align: center;
+    margin-top: 15px;
+    color: orange;
+}
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: #858484;
+}
+/* Employer Review */
+.employer-review{
+    width: 50%;
+    height: 70vh;
+    background-image: url(assets/Group\ 11.png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.employer-review-head{
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+}
+.slideshow-container1{
+    width: 400px;
+    position: relative;
+    padding-top: 100px;
+    padding-left: 150px;
+}   
+.mySlides1{
+    display: none;
+    width: 360px;
+    height: 150px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Spartan', sans-serif;
+    position: relative;
+}
+/* The dot/bullet/indicator container */
+.dot-container1 {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+}
+  
+/* The dots/bullets/indicators */
+.dot1 {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+/* Add a background color to the active dot/circle */
+.active, .dot1:hover {
+    background-color: #858484;
+}
+
+
+/* Footer Section */
+.footer{
+    width: 100%;
+    height: 360px;
+    margin-top: 250px;
+    flex-wrap: wrap;
+    background-color: #3D3B40;
+}
+.footer-fields{
+    margin: 0 80px;
+    display: flex;
+}
+.footer-right{
+    width: 320px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+}
+#footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#footer-logo-head{
+    object-fit: cover;
+}
+.footer-right p{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.line1{
+    width: 250px;
+    margin-top: 40px;
+}
+.footer-left{
+    width: 670px;
+    margin-top: 95px;
+    margin-left: 60px;
+    color: white;
+}
+.left-head{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 12px;
+}
+.left-head-info{
+    width: 800px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 165px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+#about-left-head-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.left-head-info2{
+    margin-top: -20px;
+    margin-left: 30px;
+}
+#address{
+    margin-top: 15px;
+    line-height: 20px;
+}
+.footer-media{
+    margin: 0 80px;
+    display: flex;
+}
+.line2{
+    width: 1130px;
+    margin: 30px 100px;
+}
+.social-media{
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+#media-logos{
+    margin-top: -14px;
+    margin-left: 20px;
+}
+#media-logos img{
+    padding-left: 10px;
+}
+.footer-privacy{
+    display: flex;
+    gap: 25px;
+    margin-top: -10px;
+}
+.footer-privacy #terms-policy{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+#gap-break{
+    color: white;
+    margin-top: -3px;
+}
+  
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+
+}

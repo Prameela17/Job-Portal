@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Container */
+.login-container{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin: -20px auto;
+}
+.login-form{
+    width: 480px; 
+    height: 480px;
+    border: 1px solid #989898;
+    box-shadow: 0 5px 20px #989898;
+    border: none;
+	cursor: default;
+    border-radius: 20px;
+    margin-top: -40px;
+    margin-left: 140px;
+}
+.side-img{
+    width: 600px; 
+}
+.login-form-head{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 40px;
+}
+#info{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+}
+.form-lable{
+    margin-left: 80px;
+}
+.form{
+    margin-top: 30px;
+}
+.form input{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #989898;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.form-lable button{
+    width: 312px;
+    height: 38px;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #33B249;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #33B249;
+}
+.line{
+    width: 310px;
+    margin-top: 25px;
+}
+.google-login{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 290px;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 20px;
+    border: 1px solid #989898;
+    border-radius: 15px;
+    margin-top: 20px;
+    color: #1A1A1A;
+}
+#signUp{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+#signUp a{
+    color: #1E93FF;
+}
