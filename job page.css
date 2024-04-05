@@ -185,4 +185,14 @@ body{
     align-items: center;
     margin-left: 130px;
     margin-top: 20px;
+    gap: 8px;
+}
+#tags-head{
+    font-size: 16px;
+    font-weight: 700;
+}
+#role{
+    font-size: 14px;
+    word-spacing: 15px;
+    margin-top: 5px;
 }

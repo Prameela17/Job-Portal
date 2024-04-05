@@ -19,6 +19,8 @@ body{
     margin: auto;
     height: 65px;
     background-color: #666666;
+    position: fixed;
+    margin-top: -65px;
 }
 .logo{
     width: 150px;
@@ -108,8 +110,8 @@ body{
 .cover-profile{
     width: 100%;
     object-fit: cover;
-    margin-left: -23px;
-    
+    margin-left: -23px;  
+    margin-top: 70px;
 }
 
 /* Profile-Section */
@@ -117,9 +119,25 @@ body{
     margin-left: 360px;
     position: relative;
 }
+.profile-head{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.profile-head pre{
+    margin-left: 260px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #525CEB;
+}
+.profile-head span{
+    font-size: 13px;
+    font-weight: 400;
+    color: #525CEB;
+}
 .profile-head img{
     position: absolute;
-    top: -130px;
+    top: -120px;
     left: -220px;
 }
 .profile-head p{
@@ -158,7 +176,7 @@ body{
 }
 .person-resume{
     margin-left: 360px;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 #resume-head{
@@ -180,8 +198,123 @@ body{
     text-decoration: none;
     color: #0070D7;
 }
+.person-resume pre{
+    margin-top: 15px;
+    font-size: 18px;
+    margin-left: 300px;
+}
 #resume-info{
-    margin-top: 8px;
+    margin-top: 15px;
     font-size: 13px;
     color: #636363;
+}
+
+/* Footer Section */
+.footer{
+    width: 100%;
+    height: 360px;
+    margin-top: 160px;
+    flex-wrap: wrap;
+    background-color: #3D3B40;
+}
+.footer-fields{
+    margin: 0 80px;
+    display: flex;
+}
+.footer-right{
+    width: 320px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+}
+#footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#footer-logo-head{
+    object-fit: cover;
+}
+.footer-right p{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.line1{
+    width: 250px;
+    margin-top: 40px;
+}
+.footer-left{
+    width: 670px;
+    margin-top: 95px;
+    margin-left: 60px;
+    color: white;
+}
+.left-head{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 12px;
+}
+.left-head-info{
+    width: 800px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 165px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+#about-left-head-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.left-head-info2{
+    margin-top: -20px;
+    margin-left: 30px;
+}
+#address{
+    margin-top: 15px;
+    line-height: 20px;
+}
+.footer-media{
+    margin: 0 80px;
+    display: flex;
+}
+.line2{
+    width: 1130px;
+    margin: 30px 100px;
+}
+.social-media{
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+#media-logos{
+    margin-top: -14px;
+    margin-left: 20px;
+}
+#media-logos img{
+    padding-left: 10px;
+}
+.footer-privacy{
+    display: flex;
+    gap: 25px;
+    margin-top: -10px;
+}
+.footer-privacy #terms-policy{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+#gap-break{
+    color: white;
+    margin-top: -3px;
 }

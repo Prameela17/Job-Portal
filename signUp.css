@@ -13,6 +13,7 @@ body{
 
 /* Container */
 .signup-container{
+    width: 1250px;
     display: flex;
     gap: 30px;
     align-items: center;
@@ -82,6 +83,9 @@ body{
 .radio-button input{
     margin-top: 1px;
 }
+input[type="radio"]{
+    accent-color: #2D42FF;
+}
 .radio-button label{
     margin-left: 8px;
     font-size: 14px;
@@ -127,4 +131,84 @@ body{
     color: #1E93FF;
     font-size: 13px;
     margin-left: 30px;
+}
+
+@media screen and (max-width:768px) {
+
+    .signup-container{
+        width: 750px;
+        display: flex;
+        gap: 10px;
+    }
+    .signup-side-img{
+        width: 400px;
+        margin-left: 10px;
+    }
+    .side-img-head{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    .side-img-head-info{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .side-img{
+        width: 300px; 
+    }
+    .signup-form{
+        width: 350px; 
+        height: 430px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .signup-form-head{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .form-lable{
+        margin-left: 30px;
+    }
+    .form input{
+        width: 270px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    .radio{
+        margin-top: -10px;
+    }
+    #candidate{
+        width: 10px;
+    }
+    #recruiter{
+        width: 10px;
+    }
+    .radio-button label{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .checkbox{
+        margin-top: -10px;
+    }
+    #checkbox{
+        width: 10px;
+    }
+    .checkbox label{
+        font-size: 12px;
+    }
+    .checkbox label a{
+        font-size: 10px;
+    }
+    .text{
+        top: 27px;
+        left: 18px;
+    }
+    .register-button button{
+        width: 120px;
+        height: 30px;
+        margin-top: -10px;
+    }
+    .register-button a{
+        margin-left: 20px;
+        margin-top: -10px;
+    }
 }
