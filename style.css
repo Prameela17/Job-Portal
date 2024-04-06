@@ -508,7 +508,7 @@ body{
     width: 100%;
     height: 45vh;
     margin-top: 150px;
-    background-image: linear-gradient(rgba(43, 41, 41, 0.75),rgba(96, 95, 99, 0.75)), url(assets/group-friends-eating-restaurant\ 1.jpg);
+    background-image: linear-gradient(rgba(49, 48, 48, 0.75),rgba(58, 58, 58, 0.75)), url(assets/group-friends-eating-restaurant\ 1.jpg);
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -1039,13 +1039,13 @@ body{
 
     /* Testimonal Section */
     .testimonal{
-        margin-top: 60px;
+        margin-top: 100px;
     }
     .candidate-review{
         height: 290px;
     }
     .candidate-review-head{
-        margin-top: 15px;
+        margin-top: 20px;
         font-size: 26px;
     }
     .slideshow-container{
@@ -1071,8 +1071,8 @@ body{
         height: 290px;
     }
     .employer-review-head{
-        margin-top: 15px;
-        font-size: 28px;
+        margin-top: 20px;
+        font-size: 26px;
     }
     .slideshow-container1{
         width: 330px;
@@ -1239,9 +1239,15 @@ body{
     .testimonal{
         margin-top: 60px;
     }
+    .candidate-review{
+        height: 380px;
+    }
     .candidate-review-head{
         margin-top: 30px;
         font-size: 30px;
+    }
+    .employer-review{
+        height: 380px;
     }
     .employer-review-head{
         margin-top: 30px;
