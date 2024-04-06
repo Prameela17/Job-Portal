@@ -19,8 +19,6 @@ body{
     margin: auto;
     height: 65px;
     background-color: #666666;
-    position: fixed;
-    margin-top: -65px;
 }
 .logo{
     width: 150px;
@@ -111,11 +109,11 @@ body{
     width: 100%;
     object-fit: cover;
     margin-left: -23px;  
-    margin-top: 70px;
 }
 
 /* Profile-Section */
 .candidate-profile{
+    width: 800px;
     margin-left: 360px;
     position: relative;
 }
@@ -317,4 +315,195 @@ body{
 #gap-break{
     color: white;
     margin-top: -3px;
+}
+
+
+@media screen and (max-width:768px) {
+    body{
+        width: 768px;
+    }
+    .navbar {
+        width: 768px;
+    }
+    .logo{
+        margin-left: 30px;
+        margin-top: 8px;
+    }
+    .search{
+        width: 200px;
+        left: -40px;
+    }
+    .nav-items1 {
+        display: flex;
+        gap: 5px;
+        margin-left: -20px;
+    }
+    #items ul li{
+        font-size: 20px;
+    }
+
+    .cover-profile img{
+        width: 103%; 
+    }
+    .profile-head{
+        display: flex;
+        gap: 5px;
+    }
+    .candidate-profile{
+        width: 500px;
+        margin-left: 185px;
+    }
+    .profile-head pre{
+        margin-left: 180px;
+        font-size: 14px;
+    }
+    .profile-head span{
+        font-size: 12px;
+    }
+    .profile-head img {
+        width: 167px;
+        top: -94px;
+        left: -160px;
+    }
+    .profile-head p{
+        font-size: 28px;
+    }
+    #details-media-logo p{
+        font-size: 11px;
+        color: #262626;
+    }
+    #details-media-logo button{
+        margin-left: 130px;
+    }
+    .person-resume{
+        margin-left: 185px;
+    }
+    #resume-head{
+        font-size: 22px;
+    }
+    .person-resume button{
+        width: 450px;
+    }
+    .person-resume pre{
+        margin-left: 240px;
+    }
+    #resume-info {
+        width: 500px;
+    }
+
+    /* Footer */
+    .footer{
+        width: 768px;
+        height: 330px;
+        margin-top: 180px;
+    }
+    .footer-fields{
+        margin: 0 20px;
+    }
+    .footer-right{
+        width: 220px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    #footer-logo{
+        display: flex;
+        gap: 20px;
+    }
+    .footer-right p{
+        margin-top: 30px;
+        font-size: 10px;
+    }
+    .line1{
+        width: 220px;
+        margin-top: 40px;
+    }
+    .footer-left{
+        width: 380px;
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+    .left-head{
+        font-size: 12px;
+    }
+    .left-head-info{
+        width: 470px;
+        gap: 50px;
+        font-size: 10px;
+    }
+    .left-head-info2{
+        margin-left: 20px;
+    }
+    .footer-media{
+        margin: 0 40px;
+    }
+    .line2{
+        width: 700px;
+        margin: 30px 30px;
+    }
+    #media-logos{
+        margin-left: -15px;
+    }
+    #media-logos img{
+        padding-left: 12px;
+    }
+    .footer-privacy{
+        display: flex;
+        gap: 20px;
+        margin-left: -20px;
+    }
+}
+
+
+/* @media screen and (max-width:320px) {
+
+    .cover-profile img {
+        width: 247%;
+    }
+    .profile-head img {
+        width: 167px;
+        top: -94px;
+        left: -160px;
+    }
+    .candidate-profile {
+        margin-left: 185px;
+    }
+    .person-resume{
+        margin-left: 185px;
+    }
+} */
+
+@media screen and (min-width:769px) and (max-width:1315px) {
+
+    body{
+        width: 1330px;
+    }
+    .navbar {
+        width: 1343px;
+    }
+    .footer{
+        width: 1343px;
+        height: 380px;
+    }
+    .footer-fields{
+        margin: 0 80px;
+    }
+    .footer-right{
+        width: 320px;
+        height: 150px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .footer-right p{
+        font-size: 15px;
+    }
+    .left-head{
+        font-size: 18px;
+    }
+    .footer-privacy #terms-policy{
+        font-size: 14px;
+    }
+    #gap-break{
+        color: white;
+        margin-top: -3px;
+    }
 }

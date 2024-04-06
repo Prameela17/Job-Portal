@@ -62,7 +62,7 @@ body{
     gap: 10px;
     flex-wrap: wrap;
     align-items: center;  
-    margin-left: 490px;
+    margin-left: 480px;
 }
 .nav-items1 {
     z-index: 2;
@@ -84,7 +84,7 @@ body{
     position: relative;
     display: inline-block;
     list-style: none;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     margin: 0 16px;
 }
@@ -141,7 +141,6 @@ body{
 .color{
     width: 113%;
     position: absolute;
-    object-fit: cover;
     top: -428px;
     left: -178px;
     z-index: 0;
@@ -397,7 +396,7 @@ body{
 }
 .offering-deals{
     font-family: 'Sofia Sans', sans-serif;
-    padding: 80px 70px;
+    padding: 80px 80px;
     color: white;
 }
 .offering-deals .head{
@@ -447,7 +446,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-left: 10px;
+    margin-left: 50px;
     gap: 10px;
     width: 1100px;
 }
@@ -537,7 +536,7 @@ body{
 
 /* Popular Categories */
 .popular-categories{
-    margin: 100px 90px;
+    margin: 100px 100px;
 }
 .categories{
     text-align: center;
@@ -697,7 +696,7 @@ body{
     width: 400px;
     position: relative;
     padding-top: 100px;
-    padding-left: 150px;
+    padding-left: 160px;
 }   
 .mySlides1{
     display: none;
@@ -744,7 +743,7 @@ body{
     background-color: #3D3B40;
 }
 .footer-fields{
-    margin: 0 80px;
+    margin-left: 100px;
     display: flex;
 }
 .footer-right{
@@ -810,12 +809,12 @@ body{
     line-height: 20px;
 }
 .footer-media{
-    margin: 0 80px;
+    margin-left: 100px;
     display: flex;
 }
 .line2{
     width: 1130px;
-    margin: 30px 100px;
+    margin: 30px 110px;
 }
 .social-media{
     width: 1140px;
@@ -844,13 +843,384 @@ body{
     color: white;
     margin-top: -3px;
 }
-  
-
-
+ 
 
 
 @media screen and (max-width:768px) {
+    body{
+        width: 768px;
+    }
+    .navbar {
+        width: 768px;
+    }
+    .logo{
+        margin-left: 30px;
+        margin-top: 8px;
+    }
+    .search{
+        width: 200px;
+        left: -40px;
+    }
+    .nav-items {
+        display: flex;
+        gap: 5px;
+        margin-left: 40px;
+    }
+    .nav-items1 {
+        display: flex;
+        gap: 5px;
+        margin-left: -20px;
+    }
+    #items ul li{
+        font-size: 20px;
+    }
 
+    /* Navbar Container */
 
+    .left-img{
+        width: 420px;
+        margin-left: 10px;
+    }
+    .left-content{
+        top: 264px;
+        left: 50px;
+    }
+    .color{
+        display: block;
+        width: 120%;
+        top: -232px;
+        left: -155px;
+    }
+    .right-img{
+        display: block;
+        width: 350px;
+        top: 80px;
+        right: 10px;
+    }
+    #head{
+        font-size: 25px;
+        margin-top: -30px;
+    }
+    #info{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .box{
+        margin-top: 20px;
+        width: 100px;
+    }
+    #circle{
+        margin-top: 12px;
+        margin-left: 30px;
+    }
+    #box1{
+        width: 200px;
+        height: 25px;
+        padding-top: 6px;
+        font-size: 20px;
+        margin-top: 18px;
+    }
+    .job-search {
+        width: 768px;
+    }
+    .search-field {
+        width: 400px;
+        margin-left: -20px;
+        padding: 3px 50px;
+    }
+    #location-icon {
+        left: 300px;
+    }
 
+    /* Recent Jobs Section */
+    .recent-jobs{
+        margin: 80px 40px;
+    }
+    .tab{
+        margin-top: -10px;
+    }
+    .component{
+        width: 600px;
+    }
+    .component-box{
+        width: 560px;
+        margin: 20px 0;
+        border: 1px solid #b6b6b6;
+        background-color: #FFFFFF;
+    }
+    
+
+    /* Offering Deals Section */
+    .offering-deals{
+        padding: 80px 20px;
+    }
+    #deals-boxes{
+        width: 730px;
+        display: flex;
+        gap: 20px;
+        margin-top: 50px;
+    }
+    #deals-box{
+        width: 200px;
+        height: 140px;
+        padding: 20px;
+    }
+    #deals-head{
+        font-size: 22px;
+    }
+    #deals-head-info{
+        font-size: 13px;
+    }
+
+    /* Top Hiring Section */
+    .top-hiring-companies{
+        margin: 80px 40px;
+    }
+    .top-hire{
+        display: flex;
+        gap: 10px;
+        width: 700px;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .company-openings{
+        width: 260px;
+        height: 180px;
+        padding: 30px;
+    }
+    .nameOfCompany img{
+        width: 180px;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+    .company-name #name{
+        font-size: 25px;
+    }
+    .company-name #place{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .company-openings button{
+        width: 150px;
+        margin-top: 30px;
+        margin-left: 60px;
+    }
+    
+    /* Popular Categories */
+    .popular-categories{
+        margin: 100px 0;
+    }
+    .all-categories{
+        margin-top: 40px;
+        width: 750px;
+        gap: 10px;
+    }
+    .category1{
+        width: 140px;
+        height: 140px;
+    }
+  
+
+    /* Testimonal Section */
+    .candidate-review-head{
+        font-size: 28px;
+    }
+    .slideshow-container{
+        width: 350px;
+        padding-top: 80px;
+        padding-left: 30px;
+    } 
+    .mySlides{
+        width: 320px;
+    }
+    #personName{
+        margin-left: 20px;
+    }
+    #personReview{
+        font-size: 10px;
+    }
+    .employer-review-head{
+        font-size: 30px;
+    }
+    .slideshow-container1{
+        width: 350px;
+        padding-top: 80px;
+        padding-left: 30px;
+    }   
+    .mySlides1{
+        width: 320px;
+    }
+
+    /* Footer */
+    .footer{
+        width: 768px;
+        height: 330px;
+        margin-top: 180px;
+    }
+    .footer-fields{
+        margin: 0 20px;
+    }
+    .footer-right{
+        width: 220px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    #footer-logo{
+        display: flex;
+        gap: 20px;
+    }
+    .footer-right p{
+        margin-top: 30px;
+        font-size: 10px;
+    }
+    .line1{
+        width: 220px;
+        margin-top: 40px;
+    }
+    .footer-left{
+        width: 380px;
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+    .left-head{
+        font-size: 12px;
+    }
+    .left-head-info{
+        width: 470px;
+        gap: 50px;
+        font-size: 10px;
+    }
+    .left-head-info2{
+        margin-left: 20px;
+    }
+    .footer-media{
+        margin: 0 40px;
+    }
+    .line2{
+        width: 700px;
+        margin: 30px 30px;
+    }
+    #media-logos{
+        margin-left: -15px;
+    }
+    #media-logos img{
+        padding-left: 12px;
+    }
+    .footer-privacy{
+        display: flex;
+        gap: 20px;
+        margin-left: -20px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    
+    .color{
+        width: 257%;
+        top: -152px;
+        left: -54px;
+    }
+    .right-img{
+        top: 92px;
+        right: -442px;
+    }
+    #head{
+        font-size: 23px;
+        margin-top: -15px;
+    }
+    #info{
+        font-size: 9px;
+    }
+}
+
+/* @media only screen and (max-width:375px) {
+    
+    .color{
+        width: 219%;
+        top: -152px;
+        left: -52px;
+    }
+    .right-img{
+        top: 92px;
+        right: -400px;
+    }
+    #head{
+        font-size: 23px;
+        margin-top: -15px;
+    }
+    #info{
+        font-size: 9px;
+    }
+} */
+
+/* @media only screen and (max-width:425px) {
+    
+    .color{
+        width: 193%;
+        top: -152px;
+        left: -52px;
+    }
+    .right-img{
+        top: 92px;
+        right: -350px;
+    }
+    #head{
+        font-size: 23px;
+        margin-top: -15px;
+    }
+    #info{
+        font-size: 9px;
+    }
+} */
+
+@media screen and (min-width:769px) and (max-width:1315px) {
+
+    body{
+        width: 1330px;
+    }
+    .navbar {
+        width: 1330px;
+    }
+    .color{
+        width: 148%;
+    }
+    .right-img{
+        width: 513px;
+        right: -298px;
+    }
+    .footer{
+        width: 1330px;
+        height: 380px;
+    }
+    .footer-fields{
+        margin: 0 80px;
+    }
+    .footer-right{
+        width: 320px;
+        height: 150px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .footer-right p{
+        font-size: 15px;
+    }
+    .left-head{
+        font-size: 18px;
+    }
+    .footer-privacy #terms-policy{
+        font-size: 14px;
+    }
+    #gap-break{
+        color: white;
+        margin-top: -3px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .color{
+        width: 112%;
+        top: -502px;
+        left: -178px;
+    }
 }

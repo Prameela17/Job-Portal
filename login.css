@@ -59,12 +59,15 @@ body{
 .form-lable button{
     width: 312px;
     height: 38px;
-    color: white;
     font-size: 16px;
     border: 1px solid #33B249;
     margin-top: 20px;
     border-radius: 15px;
     background-color: #33B249;
+}
+.form-lable button a{
+    text-decoration: none;
+    color: white;
 }
 .line{
     width: 310px;
@@ -91,4 +94,71 @@ body{
 }
 #signUp a{
     color: #1E93FF;
+}
+
+@media screen and (max-width:768px) {
+
+    body{
+        width: 768px;
+    }
+    .login-container{
+        width: 650px;
+        display: flex;
+        gap: 10px;
+    }
+    .side-img{
+        width: 340px; 
+        margin-top: 30px;
+    }
+    .login-form{
+        width: 310px;
+        height: 380px;
+        margin-top: 50px;
+        margin-left: -10px;
+    }
+    .login-form-head{
+        font-size: 26px;
+        margin-top: 20px;
+    }
+    #info{
+        font-size: 13px;
+    }
+    .form-lable{
+        margin-left: 20px;
+    }
+    .form input{
+        width: 250px;
+        height: 32px;
+        margin-top: -5px;
+    }
+    .form-lable button {
+        width: 265px;
+        height: 33px;
+    }
+    .google-login{
+        width: 240px;
+        height: 33px;
+    }
+    .line{
+        width: 260px;
+    }
+    #signUp{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1315px) {
+
+    .login-form{
+        width: 394px;
+        height: 470px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .side-img {
+        width: 480px;
+    }
+    .form-lable{
+        margin-left: 40px;
+    }
 }
