@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Post Page1</title>
+    <link rel="stylesheet" href="job post page1.css">
+</head>
+<body>
+      
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1 class="logo">Robto</h1>
+        <div class="search">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </button>
+            <input class="input" type="search" placeholder="Search Doctor">
+        </div>
+
+        <div class="nav-items1">
+            <div id="items">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="job page.html">Job</a></li>
+                    <li><a href="job seeker notification.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                        </svg></a>
+                    </li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn"><img src="assets/Profile Icon.png" alt="Profile" width="30px"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="dropdown-box">
+                                <p>zeenajalil@gmail.com</p>
+                                <div id="dropdown-pages">
+                                    <img src="assets/flowbite_profile-card-solid.png" alt="">
+                                    <a href="profile.html">Profile</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/Frame 91.png" alt="">
+                                    <a href="save page.html">My Jobs</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/pajamas_question.png" alt="">
+                                    <a href="">Help Centre</a>
+                                </div>
+
+                                <button><a href="index.html">Sign out</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <button class="btn"><a href="">Post Job</a></button>
+        </div>
+    </div>
+
+    <!-- Navbar Container -->
+    <div class="nav-container">
+        <div class="left-side">
+            <p>Post A Job</p>
+        </div>
+        <div class="right-img">
+            <img src="assets/13862217_5375790 1.png" alt="" class="side-img">
+        </div>
+    </div>
+
+    <!-- Job Post Form -->
+    <div class="job-post">
+        <form action="" class="job-post-form">
+            <label for="email">Your Email</label><br>
+            <input type="email" id="email" name="email" placeholder="youremail@gmail.com"><br>
+
+            <label for="job">Job Title</label><br>
+            <input type="text" id="job" name="job"><br>
+
+            <label for="location">Location</label><br>
+            <input type="text" id="location" name="location" placeholder="Full Time"><br>
+
+            <label for="tags">Job Tags</label><br>
+            <input type="text" id="tags" name="tags" placeholder="eg : PHP, Social media, Management"><br>
+            <p>Comma separate tags, such as required skills or technologies, for this job.</p><br>
+            
+            <label for="content">Description</label><br>
+            <div class="font">
+                <div id="font-style">
+                    <img src="assets/img 1.png" alt="">
+                    <img src="assets/img 2.png" alt="">
+                </div>
+                <!-- <p>|</p> -->
+                <div id="font-style">
+                    <img src="assets/img 3.png" alt="">
+                    <img src="assets/img 4.png" alt="">
+                </div>
+                <!-- <p>|</p> -->
+                <div id="font-style">
+                    <img src="assets/img 5.png" alt="">
+                    <img src="assets/img 6.png" alt="">
+                </div>
+                <!-- <p>|</p> -->
+                <div id="font-style" class="font-style">
+                    <img src="assets/img 7.png" alt="">
+                    <img src="assets/img 8.png" alt="">
+                </div>
+            </div>
+            <input type="text" id="content" name="description" contenteditable="true"><br>
+
+            <label for="emailOrUrl">Application Email/URL</label><br>
+            <input type="text" id="emailOrUrl" name="emailOrUrl" required pattern=".*@.*|https?://.*" placeholder="Enter an email address or website URL"><br>
+
+            <label for="salary">Salary</label><br>
+            <input type="text" id="salary" oninput="formatSalary(this.value)" placeholder="eg : 20,000/-"><br>
+
+            <button><a href="">PREVIEW</a></button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-fields">
+                <div class="footer-right">
+                    <div id="footer-logo">
+                        <img src="assets/Ellipse 7.png" alt="Logo">
+                        <img src="assets/LOGO.png" alt="" id="footer-logo-head">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Pellent <br>
+                        esque turpis risus id donec id ultricies fringilla <br>
+                        incidunt.Faucibus nibh leo interdum
+                    </p>
+                    <div class="line1">
+                        <hr>
+                    </div>
+                </div>
+                <div class="footer-left">
+                    <div class="left-head">
+                        <div>
+                            <p>FOR EMPLOYERS</p>
+                            <img src="assets/Group 14.png" alt="line">
+                        </div>
+                        <div>
+                            <p>FOR CANDIDATES</p>
+                            <img src="assets/Group 14.png" alt="line">
+                        </div>
+                        <div>
+                            <p>CONTACT US</p>
+                            <img src="assets/Group 14.png" alt="line">
+                        </div>
+                    </div>
+                    <div class="left-head-info">
+                        <div class="left-head-info1">
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Browse Candidates</p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Post a Job</p>
+                            </div>
+                        </div>
+                        <div class="left-head-info1">
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Browse Jobs</p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Upload CV</p>
+                            </div>
+                        </div>
+                        <div class="left-head-info2">
+                            <div id="about-left-head-info">
+                                <a href=""><img src="assets/mdi_location.png" alt=""></a>
+                                <p id="address">
+                                    7007 Riverside Dr Redding, <br>
+                                    CA 96001 USA
+                                </p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <a href=""><img src="assets/material-symbols_mail.png" alt=""></a>
+                                <p>Call us +49 1234 5678 9</p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <a href=""><img src="assets/mdi_phone.png" alt=""></a>
+                                <p>logo@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line2">
+                <hr>
+            </div>
+            <div class="footer-media">  
+                <div class="social-media">
+                    <div id="media-logos">
+                        <a href="#"><img src="assets/mdi_twitter.png" alt="twitter-logo"></a>
+                        <a href="#"><img src="assets/mdi_youtube.png" alt="youtube-logo"></a>
+                        <a href="#"><img src="assets/mdi_instagram.png" alt="instagram-logo"></a>
+                        <a href="#"><img src="assets/ic_baseline-facebook.png" alt="facebook-logo"></a>
+                    </div>
+                    <div class="footer-privacy">
+                        <a href="#" id="terms-policy">Terms of Use</a>
+                        <p id="gap-break"> | </p>
+                        <a href="#" id="terms-policy">Privacy Policy</a>
+                        <p id="gap-break"> | </p>
+                        <a href="#" id="terms-policy">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+      
+</body>
+</html>

@@ -25,16 +25,37 @@
         <div class="nav-items1">
             <div id="items">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Job</a></li>
-                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="job page.html">Job</a></li>
+                    <li><a href="job seeker notification.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
                         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
                         </svg></a>
                     </li>
-                    <li><a href="#"><img src="assets/Profile Icon.png" alt="Profile" width="30px"></a></li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn"><img src="assets/Profile Icon.png" alt="Profile" width="30px"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="dropdown-box">
+                                <p>zeenajalil@gmail.com</p>
+                                <div id="dropdown-pages">
+                                    <img src="assets/flowbite_profile-card-solid.png" alt="">
+                                    <a href="profile.html">Profile</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/Frame 91.png" alt="">
+                                    <a href="save page.html">My Jobs</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/pajamas_question.png" alt="">
+                                    <a href="">Help Centre</a>
+                                </div>
+
+                                <button><a href="index.html">Sign out</a></button>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </div>
-            <button class="btn"><a href="login.html">Post Job</a></button>
+            <button class="btn"><a href="">Post Job</a></button>
         </div>
     </div>
 
@@ -44,7 +65,7 @@
             <div class="left-img">
                 <img src="assets/wepik-export-20240315112712cPUh 1.png" alt="" class="left-img">
             </div>
-            <img src="assets/Rectangle 1.png" alt="" class="color">
+            <!-- <img src="assets/Rectangle 1.png" alt="" class="color"> -->
             <div class="left-content">
                 <p id="head">We Offer <b>30,000+</b> <br> Job Vacancies Right Now!</p>
                 <p id="info">

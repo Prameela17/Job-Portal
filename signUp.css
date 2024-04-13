@@ -127,6 +127,12 @@ input[type="radio"]{
     background-color: #33B249;
     color: white;
 }
+.register-button button a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
 .register-button a{
     color: #1E93FF;
     font-size: 13px;

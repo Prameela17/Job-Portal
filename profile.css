@@ -90,6 +90,81 @@ body{
 #items ul li:hover::after{
     width: 100%;
 }
+
+/* Dropdown button */
+    .dropbtn {
+        background-color: #666666;
+        height: 65px;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 240px;
+        height: 250px;
+        margin-left: -80px;
+        border: 1px solid #DFDFDF;
+        border-radius: 8px;
+        box-shadow: 0px 8px 20px rgba(61, 61, 61, 0.2);
+        z-index: 1;
+    }
+    .dropdown-box{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .dropdown-box p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #424242;
+        margin-bottom: 10px;
+    }
+    .dropdown-box button{
+        width: 240px;
+        height: 30px;
+        border: 1px solid #f9f9f9;
+        border-top: 2px solid #DFDFDF;
+        background-color: #f9f9f9;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+    .dropdown-box button a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #0F7DFF;
+    }
+    #dropdown-pages{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .dropdown-content a {
+        color: #424242;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+/* End of Dropdown Button */
+
 .btn{
     width: 80px;
     height: 30px;
@@ -385,7 +460,7 @@ body{
         width: 450px;
     }
     .person-resume pre{
-        margin-left: 240px;
+        margin-left: 210px;
     }
     #resume-info {
         width: 500px;
@@ -394,7 +469,6 @@ body{
     /* Footer */
     .footer{
         width: 768px;
-        height: 330px;
         margin-top: 180px;
     }
     .footer-fields{
@@ -438,7 +512,7 @@ body{
     }
     .line2{
         width: 700px;
-        margin: 30px 30px;
+        margin: 40px 30px;
     }
     #media-logos{
         margin-left: -15px;
@@ -453,25 +527,6 @@ body{
     }
 }
 
-
-/* @media screen and (max-width:320px) {
-
-    .cover-profile img {
-        width: 247%;
-    }
-    .profile-head img {
-        width: 167px;
-        top: -94px;
-        left: -160px;
-    }
-    .candidate-profile {
-        margin-left: 185px;
-    }
-    .person-resume{
-        margin-left: 185px;
-    }
-} */
-
 @media screen and (min-width:769px) and (max-width:1315px) {
 
     body{
@@ -482,7 +537,6 @@ body{
     }
     .footer{
         width: 1343px;
-        height: 380px;
     }
     .footer-fields{
         margin: 0 80px;

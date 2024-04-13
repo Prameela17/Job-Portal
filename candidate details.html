@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Details</title>
+    <link rel="stylesheet" href="candidate details.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1 class="logo">Robto</h1>
+        <div class="search">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </button>
+            <input class="input" type="search" placeholder="Search Doctor">
+        </div>
+
+        <div class="nav-items1">
+            <div id="items">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="job page.html">Job</a></li>
+                    <li><a href="job seeker notification.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                        </svg></a>
+                    </li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn"><img src="assets/Profile Icon.png" alt="Profile" width="30px"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="dropdown-box">
+                                <p>zeenajalil@gmail.com</p>
+                                <div id="dropdown-pages">
+                                    <img src="assets/flowbite_profile-card-solid.png" alt="">
+                                    <a href="profile.html">Profile</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/Frame 91.png" alt="">
+                                    <a href="save page.html">My Jobs</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/pajamas_question.png" alt="">
+                                    <a href="">Help Centre</a>
+                                </div>
+
+                                <button><a href="index.html">Sign out</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <button class="btn"><a href="">Post Job</a></button>
+        </div>
+    </div>
+
+    <!-- Navbar Container -->
+    <div class="nav-container">
+        <div class="left-side">
+            <a href="employer notification page2.html"><img src="assets/grommet-icons_link-next.png" alt=""></a>
+            <p>Candidate Details</p>
+        </div>
+        <div class="right-img">
+            <img src="assets/12463949_4966444 2.png" alt="" class="side-img">
+        </div>
+    </div>
+
+    <!-- Candidate Details -->
+    <div class="candidate-details">
+        <div class="details-info1">
+            <div class="candidate-profile">
+                <img src="assets/Frame 40.png" alt="" width="140px">
+                <div class="candidate-profile-info">
+                    <p id="skill-name">Zeena Jalil</p>
+                    <div id="job-name">
+                        <img src="assets/mdi_account.png" alt="">
+                        <p>Senior Health and Food</p>
+                    </div>
+                    <div id="job-name">
+                        <img src="assets/mdi_location.png" alt="">
+                        <p>7 Riverside Dr Redding, CA 96001 USA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-candidate">
+                <p id="skill-name">About Me</p>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur. Urna sapien tristique ipsum quam at <br>
+                    magnis arcu ultrices.Senectus condimentum maecenas tristique orci consequat <br>
+                    diam cras mi sit. Vivamus et interdum praesentpellentesque faucibus vestibulum <br>
+                    id tempus semper. Massa blandit viverra ultrices tristique semper nec <br>
+                    adipiscing tincidunt magna.
+                </span>
+            </div>
+            <div class="line3">
+                <hr>
+            </div>
+            <div class="about-candidate">
+                <p id="skill-name">Skills</p>
+                <div>
+                    <button>Photoshop</button>
+                    <button>Illustrator</button>
+                    <button>Figma</button>
+                </div>
+            </div>
+            <div class="line3">
+                <hr>
+            </div>
+            <div class="about-candidate1">
+                <p id="skill-name">Education</p>
+                <img src="assets/Vector 50.png" alt="" id="stright-line">
+                <div class="education">
+                    <div class="education-info">
+                        <img src="assets/Ellipse 247.png" alt="">
+                        <div>
+                            <p id="typeOfEducation">SSLC (2015-2016)</p>
+                            <span id="nameOfStudy">Harvepatty High School <b>(80.6%)</b></span>
+                        </div>
+                    </div>
+                    <div class="education-info">
+                        <img src="assets/Ellipse 247.png" alt="">
+                        <div>
+                            <p id="typeOfEducation">Higher Secondary (2017)</p>
+                            <span id="nameOfStudy">Pasumalai higher secondary school <b>(80.6%)</b></span>
+                        </div>
+                    </div>
+                    <div class="education-info">
+                        <img src="assets/Ellipse 247.png" alt="">
+                        <div>
+                            <p id="typeOfEducation">Under Graduation (2021)</p>
+                            <span id="nameOfStudy">Srinivasa Degree College <b>(80.6%)</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line3">
+                <hr>
+            </div>
+            <div class="about-candidate">
+                <p id="skill-name">Experience</p>
+                <div id="experience">
+                    <img src="assets/Ellipse 250.png" alt="">
+                    <div>
+                        <p id="typeOfEducation">Junior Health and Food</p>
+                        <span id="nameOfStudy">Wizinoa <b>(June 2022 - July 2023)</b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="line3">
+                <hr>
+            </div>
+            <div class="about-candidate">
+                <p id="skill-name">Contact</p>
+                <div>
+                    <div id="job-name1">
+                        <img src="assets/material-symbols_mail.png" alt="">
+                        <span id="nameOfStudy">zeenajalil@gmail.com</span>
+                    </div>
+                    <div id="job-name1">
+                        <img src="assets/clarity_mobile-solid.png" alt="">
+                        <span id="nameOfStudy">+91 23464 97578</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-fields">
+                <div class="footer-right">
+                    <div id="footer-logo">
+                        <img src="assets/Ellipse 7.png" alt="Logo">
+                        <img src="assets/LOGO.png" alt="" id="footer-logo-head">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Pellent <br>
+                        esque turpis risus id donec id ultricies fringilla <br>
+                        incidunt.Faucibus nibh leo interdum
+                    </p>
+                    <div class="line1">
+                        <hr>
+                    </div>
+                </div>
+                <div class="footer-left">
+                    <div class="left-head">
+                        <div>
+                            <p>FOR EMPLOYERS</p>
+                            <img src="assets/Group 14.png" alt="line">
+                        </div>
+                        <div>
+                            <p>FOR CANDIDATES</p>
+                            <img src="assets/Group 14.png" alt="line">
+                        </div>
+                        <div>
+                            <p>CONTACT US</p>
+                            <img src="assets/Group 14.png" alt="line">
+                        </div>
+                    </div>
+                    <div class="left-head-info">
+                        <div class="left-head-info1">
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Browse Candidates</p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Post a Job</p>
+                            </div>
+                        </div>
+                        <div class="left-head-info1">
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Browse Jobs</p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Upload CV</p>
+                            </div>
+                        </div>
+                        <div class="left-head-info2">
+                            <div id="about-left-head-info">
+                                <a href=""><img src="assets/mdi_location.png" alt=""></a>
+                                <p id="address">
+                                    7007 Riverside Dr Redding, <br>
+                                    CA 96001 USA
+                                </p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <a href=""><img src="assets/material-symbols_mail.png" alt=""></a>
+                                <p>Call us +49 1234 5678 9</p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <a href=""><img src="assets/mdi_phone.png" alt=""></a>
+                                <p>logo@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line2">
+                <hr>
+            </div>
+            <div class="footer-media">  
+                <div class="social-media">
+                    <div id="media-logos">
+                        <a href="#"><img src="assets/mdi_twitter.png" alt="twitter-logo"></a>
+                        <a href="#"><img src="assets/mdi_youtube.png" alt="youtube-logo"></a>
+                        <a href="#"><img src="assets/mdi_instagram.png" alt="instagram-logo"></a>
+                        <a href="#"><img src="assets/ic_baseline-facebook.png" alt="facebook-logo"></a>
+                    </div>
+                    <div class="footer-privacy">
+                        <a href="#" id="terms-policy">Terms of Use</a>
+                        <p id="gap-break"> | </p>
+                        <a href="#" id="terms-policy">Privacy Policy</a>
+                        <p id="gap-break"> | </p>
+                        <a href="#" id="terms-policy">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

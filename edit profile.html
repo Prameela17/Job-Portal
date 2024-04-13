@@ -23,16 +23,37 @@
         <div class="nav-items1">
             <div id="items">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Job</a></li>
-                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="job page.html">Job</a></li>
+                    <li><a href="job seeker notification.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
                         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
                         </svg></a>
                     </li>
-                    <li><a href="#"><img src="assets/Profile Icon.png" alt="Profile" width="30px"></a></li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn"><img src="assets/Profile Icon.png" alt="Profile" width="30px"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="dropdown-box">
+                                <p>zeenajalil@gmail.com</p>
+                                <div id="dropdown-pages">
+                                    <img src="assets/flowbite_profile-card-solid.png" alt="">
+                                    <a href="profile.html">Profile</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/Frame 91.png" alt="">
+                                    <a href="save page.html">My Jobs</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/pajamas_question.png" alt="">
+                                    <a href="">Help Centre</a>
+                                </div>
+
+                                <button><a href="index.html">Sign out</a></button>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </div>
-            <button class="btn"><a href="login.html">Post Job</a></button>
+            <button class="btn"><a href="">Post Job</a></button>
         </div>
     </div>
  
@@ -66,7 +87,27 @@
                     <label for="email" class="title1">Email</label><br>
                     <p>zeenajalil@gmail.com</p><br>
                 </div>
-                <img src="assets/Frame 63.png" alt="">
+                <button onclick="openEmailPopup()"><img src="assets/Frame 63.png" alt=""></button>
+
+                <div id="emailPopup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closeEmailPopup()">&times;</span>
+
+                        <div class="popup-head">
+                            <p>Change email address for</p>
+                            <span>zeenajalil@gmail.com</span>
+                        </div>
+
+                        <label for="email">New email address</label><br>
+                        <input type="email" id="email" name="email"><br>
+
+                        <label for="password">Current password</label><br>
+                        <input type="password" id="password" name="password"><br>
+
+                        <button onclick="saveEmail()" id="save">Save Email</button>
+                        <button onclick="closeEmailPopup()" id="cancel">Cancel changes</button>
+                    </div>
+                </div>
             </div>
 
             <div class="line">
@@ -108,11 +149,60 @@
                 <label for="pincode" id="required" class="title1">Pin Code</label><br>
                 <input type="text" name="pincode" inputmode="numeric" maxlength="6">
             </div>
-            <div class="buttons">
-                <button id="save-button"><a href="#">SAVE</a></button>
-                <button id="cancel-button"><a href="#">Cancel</a></button>
-            </div>
         </form>
+    </div>
+
+    <!-- Job Post Form -->
+    <div class="edit-profile1">
+        <form action="" class="edit-profile1-form">
+            <p>Resume Details</p>
+
+            <label for="about">About Yourself</label><br>
+            <input id="about" name="about" contenteditable="true"><br>
+
+            <label for="content">Skills Content</label><br>
+            <div class="font">
+                <div id="font-style">
+                    <img src="assets/img 1.png" alt="">
+                    <img src="assets/img 2.png" alt="">
+                </div>
+                <!-- <p>|</p> -->
+                <div id="font-style">
+                    <img src="assets/img 3.png" alt="">
+                    <img src="assets/img 4.png" alt="">
+                </div>
+                <!-- <p>|</p> -->
+                <div id="font-style">
+                    <img src="assets/img 5.png" alt="">
+                    <img src="assets/img 6.png" alt="">
+                </div>
+                <!-- <p>|</p> -->
+                <div id="font-style" class="font-style">
+                    <img src="assets/img 7.png" alt="">
+                    <img src="assets/img 8.png" alt="">
+                </div>
+            </div>
+            <input id="content" name="content" contenteditable="true"><br>
+
+            <label for="skills">Skills</label><br>
+            <div id="skills-button">
+                <button>Photoshop <img src="assets/Vector 1.png" alt=""></button>
+                <button>Illustrator <img src="assets/Vector 1.png" alt=""></button>
+                <button>Figma <img src="assets/Vector 1.png" alt=""></button>
+            </div>
+
+            <label for="education">Education</label><br>
+            <button>+ Add Education</button><br>
+
+            <label for="experience">Experience</label><br>
+            <button>+ Add Experience</button>
+        </form>
+        <button id="preview-button"><a href="resume preview.html">Preview</a></button>
+    </div>
+
+    <div class="buttons">
+        <button id="cancel-button"><a href="profile.html">Cancel</a></button>
+        <button id="save-button"><a href="profile.html">SAVE</a></button>
     </div>
 
 
